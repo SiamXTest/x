@@ -1,0 +1,5 @@
+import re
+
+REGEX_VIDEO_CHECK_URL = re.compile(r"https://www\.xvideos\.com/video\d+/.+")
+REGEX_VIDEO_M3U8 = re.compile(r'setVideoHLS\("([^"]+)"\)')
+REGEX_IFRAME = re.compile(r'<iframe[^>]+src="([^"]+)"')
